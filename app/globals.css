@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-primary: #6C5CE7;
+  --color-primary-dark: #5A4BD1;
+  --color-primary-light: #A29BFE;
+  --color-primary-surface: #F0EEFF;
+  --color-accent: #00B894;
+  --color-hot: #E17055;
+  --color-bg: #FFFFFF;
+  --color-surface: #F7F8FA;
+  --color-card: #FFFFFF;
+  --color-card-border: #EEEBF3;
+  --color-text-primary: #111217;
+  --color-text-secondary: #4E5968;
+  --color-text-tertiary: #8B95A1;
+  --color-divider: #EEEBF3;
+}
+
+:root {
+  --primary: #6C5CE7;
+  --primary-dark: #5A4BD1;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+    background-color: #FFFFFF;
+    color: #111217;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+    letter-spacing: -0.02em;
+  }
+  h1, h2, h3, h4 { letter-spacing: -0.03em; }
+}
+
+.tabular-nums { font-variant-numeric: tabular-nums; }
+
+a, button, [role="button"] {
+  transition: transform 180ms cubic-bezier(0.2, 0, 0, 1),
+              background-color 180ms cubic-bezier(0.2, 0, 0, 1),
+              color 180ms cubic-bezier(0.2, 0, 0, 1),
+              box-shadow 180ms cubic-bezier(0.2, 0, 0, 1),
+              opacity 180ms cubic-bezier(0.2, 0, 0, 1);
+}
+.press-scale:active { transform: scale(0.97); }
+
+/* Hero gradient background */
+.hero-gradient {
+  background:
+    radial-gradient(1200px 600px at 50% -10%, rgba(108, 92, 231, 0.22), transparent 60%),
+    radial-gradient(800px 400px at 80% 40%, rgba(162, 155, 254, 0.18), transparent 60%),
+    #FFFFFF;
+}
+
+/* Markdown / long-form policy page */
+.prose-kr {
+  color: #111217;
+  line-height: 1.75;
+  font-size: 15px;
+}
+.prose-kr h2 {
+  font-size: 20px;
+  font-weight: 800;
+  margin-top: 40px;
+  margin-bottom: 12px;
+  letter-spacing: -0.03em;
+}
+.prose-kr h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+.prose-kr p { margin-bottom: 12px; color: #4E5968; }
+.prose-kr ul { margin-bottom: 12px; padding-left: 20px; }
+.prose-kr li { list-style: disc; color: #4E5968; margin-bottom: 4px; }
+.prose-kr strong { color: #111217; font-weight: 700; }
+.prose-kr a { color: #6C5CE7; text-decoration: underline; text-underline-offset: 3px; }
