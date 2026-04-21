@@ -1,7 +1,0 @@
-{
-  "tool_name": "Bash",
-  "tool_input_preview": "{\"command\":\"deploy deployments studyon-landing 2>&1 | head -10; echo '---live check---'; curl -s -o /dev/null -w 'HTTP %{http_code}\\\\n' https://studyon-landing.hyphen.it.com/ 2>&1; curl -s -o /dev/nul...",
-  "error": "Exit code 6\nDeployments for \"studyon-landing\":\n\u001b[90m┌─────\u001b[39m\u001b[90m┬──────────\u001b[39m\u001b[90m┬────────\u001b[39m\u001b[90m┬────────\u001b[39m\u001b[90m┬─────\u001b[39m\u001b[90m┬───────────────────────┐\u001b[39m\n\u001b[90m│\u001b[39m\u001b[31m ID  \u001b[39m\u001b[90m│\u001b[39m\u001b[31m Status   \u001b[39m\u001b[90m│\u001b[39m\u001b[31m Branch \u001b[39m\u001b[90m│\u001b[39m\u001b[31m Commit \u001b[39m\u001b[90m│\u001b[39m\u001b[31m URL \u001b[39m\u001b[90m│\u001b[39m\u001b[31m Created               \u001b[39m\u001b[90m│\u001b[39m\n\u001b[90m├─────\u001b[39m\u001b[90m┼──────────\u001b[39m\u001b[90m┼────────\u001b[39m\u001b[90m┼────────\u001b[39m\u001b[90m┼─────\u001b[39m\u001b[90m┼───────────────────────┤\u001b[39m\n\u001b[...",
-  "timestamp": "2026-04-21T23:39:13.120Z",
-  "retry_count": 1
-}
