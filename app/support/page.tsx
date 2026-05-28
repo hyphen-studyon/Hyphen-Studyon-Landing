@@ -57,15 +57,15 @@ const quickLinks = [
 
 export default function SupportPage() {
   return (
-    <section className="bg-white">
+    <section className="bg-[#fffdf7]">
       <div className="mx-auto max-w-3xl px-5 pt-14 pb-24">
-        <p className="text-[13px] font-bold uppercase tracking-[0.2em] text-[#6C5CE7]">
+        <p className="text-[13px] font-black uppercase text-[#17483a]">
           Support
         </p>
-        <h1 className="mt-3 text-3xl font-extrabold tracking-[-0.03em] text-[#111217] sm:text-4xl">
+        <h1 className="mt-3 text-3xl font-black text-[#14120f] sm:text-4xl">
           어떻게 도와드릴까요?
         </h1>
-        <p className="mt-4 text-[15px] leading-relaxed text-[#4E5968]">
+        <p className="mt-4 text-[15px] leading-relaxed text-[#5f645f]">
           자주 묻는 질문을 먼저 확인해 보시고, 답을 찾지 못하셨다면 이메일로 연락 주세요.
           영업일 기준 1~2일 이내에 답변드립니다.
         </p>
@@ -75,67 +75,67 @@ export default function SupportPage() {
             <a
               key={l.title}
               href={l.href}
-              className="press-scale rounded-2xl border border-[#EEEBF3] bg-white p-5 hover:border-[#D9D5E8]"
+              className="press-scale rounded-lg border border-[#e7dfcf] bg-white p-5 hover:border-[#1fbf75]"
             >
-              <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#F0EEFF] text-[#6C5CE7]">
+              <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#e9fff3] text-[#17483a]">
                 <l.icon className="h-4 w-4" aria-hidden />
               </div>
-              <h3 className="mt-3 text-[14px] font-bold tracking-[-0.02em] text-[#111217]">
+              <h3 className="mt-3 text-[14px] font-black text-[#14120f]">
                 {l.title}
               </h3>
-              <p className="mt-1 text-[13px] leading-relaxed text-[#4E5968]">{l.desc}</p>
+              <p className="mt-1 text-[13px] leading-relaxed text-[#5f645f]">{l.desc}</p>
             </a>
           ))}
         </div>
 
-        <h2 className="mt-16 text-[18px] font-extrabold tracking-[-0.03em] text-[#111217]">
+        <h2 className="mt-16 text-[18px] font-black text-[#14120f]">
           자주 묻는 질문
         </h2>
-        <div className="mt-4 divide-y divide-[#EEEBF3] rounded-2xl border border-[#EEEBF3] bg-white">
+        <div className="mt-4 divide-y divide-[#e7dfcf] rounded-lg border border-[#e7dfcf] bg-white">
           {faqs.map((f, i) => (
-            <details key={i} className="group p-5 open:bg-[#FBFAFE]">
+            <details key={i} className="group p-5 open:bg-[#fff8e7]">
               <summary className="flex cursor-pointer list-none items-start justify-between gap-4">
-                <span className="text-[15px] font-bold tracking-[-0.02em] text-[#111217]">
+                <span className="text-[15px] font-black text-[#14120f]">
                   {f.q}
                 </span>
-                <span className="mt-0.5 text-[14px] font-bold text-[#8B95A1] transition-transform group-open:rotate-45">
+                <span className="mt-0.5 text-[14px] font-black text-[#5f645f] transition-transform group-open:rotate-45">
                   +
                 </span>
               </summary>
-              <p className="mt-3 text-[14px] leading-relaxed text-[#4E5968]">{f.a}</p>
+              <p className="mt-3 text-[14px] leading-relaxed text-[#5f645f]">{f.a}</p>
             </details>
           ))}
         </div>
 
-        <h2 className="mt-16 text-[18px] font-extrabold tracking-[-0.03em] text-[#111217]">
+        <h2 className="mt-16 text-[18px] font-black text-[#14120f]">
           직접 문의
         </h2>
-        <div className="mt-4 rounded-2xl border border-[#EEEBF3] bg-[#FBFAFE] p-6">
+        <div className="mt-4 rounded-lg border border-[#e7dfcf] bg-white p-6">
           <div className="flex items-start gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#F0EEFF] text-[#6C5CE7]">
+            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#e9fff3] text-[#17483a]">
               <Mail className="h-5 w-5" aria-hidden />
             </div>
             <div>
-              <p className="text-[14px] font-bold text-[#111217]">이메일</p>
+              <p className="text-[14px] font-black text-[#14120f]">이메일</p>
               <a
                 href="mailto:hyphendev2025@gmail.com"
-                className="mt-1 inline-block text-[14px] font-bold text-[#6C5CE7] hover:underline"
+                className="mt-1 inline-block text-[14px] font-black text-[#17483a] hover:underline"
               >
                 hyphendev2025@gmail.com
               </a>
-              <p className="mt-2 text-[13px] leading-relaxed text-[#4E5968]">
+              <p className="mt-2 text-[13px] leading-relaxed text-[#5f645f]">
                 문의 시 기기 모델, OS 버전, 앱 버전, 발생 상황을 함께 보내주시면 더
                 빠르게 도와드릴 수 있습니다.
               </p>
             </div>
           </div>
-          <div className="mt-5 flex items-start gap-3 border-t border-[#EEEBF3] pt-5">
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#F0EEFF] text-[#6C5CE7]">
+          <div className="mt-5 flex items-start gap-3 border-t border-[#e7dfcf] pt-5">
+            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#e9fff3] text-[#17483a]">
               <MessageSquare className="h-5 w-5" aria-hidden />
             </div>
             <div>
-              <p className="text-[14px] font-bold text-[#111217]">학원 운영자 문의</p>
-              <p className="mt-1 text-[13px] leading-relaxed text-[#4E5968]">
+              <p className="text-[14px] font-black text-[#14120f]">학원 운영자 문의</p>
+              <p className="mt-1 text-[13px] leading-relaxed text-[#5f645f]">
                 자습ON을 학원에 도입하고 싶으시다면 같은 이메일 주소로 학원명, 인원수,
                 원하는 시작일을 적어 보내 주세요.
               </p>

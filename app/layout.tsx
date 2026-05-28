@@ -4,36 +4,36 @@ import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://studyon.hyphen.it.com'),
+  metadataBase: new URL('https://studyon-landing.hyphen.it.com'),
   title: {
-    default: '자습ON — 학원 자습실 스마트 관리',
+    default: '자습ON — 집중을 키우는 학습 RPG',
     template: '%s · 자습ON',
   },
   description:
-    '자습ON은 학원 자습실 학습을 자동으로 기록·분석하는 앱입니다. 공부 시간, 좌석, 목표, 랭킹을 한 번에 관리하세요.',
+    '자습ON은 집중 모드, 퀘스트, 포인트, 성장 캐릭터, 주간 리포트로 자습실 공부 루틴을 만드는 앱입니다.',
   applicationName: '자습ON',
-  keywords: ['자습ON', '자습실 관리', '학원 앱', '공부 시간 기록', '집중 타이머', '학원 자습실', '수학 학원'],
+  keywords: ['자습ON', '자습실 관리', '학원 앱', '공부 시간 기록', '집중 타이머', '학습 RPG', '공부 퀘스트'],
   authors: [{ name: 'hyphen' }],
   openGraph: {
     type: 'website',
     locale: 'ko_KR',
-    url: 'https://studyon.hyphen.it.com',
-    title: '자습ON — 학원 자습실 스마트 관리',
+    url: 'https://studyon-landing.hyphen.it.com',
+    title: '자습ON — 집중을 키우는 학습 RPG',
     description:
-      '공부 시간 자동 기록, 실시간 좌석 현황, 오늘의 목표와 랭킹까지. 자습ON으로 학습 리듬을 만드세요.',
+      '집중 모드, 퀘스트, 포인트, 성장 캐릭터, 주간 리포트로 자습실 공부 루틴을 만드세요.',
     siteName: '자습ON',
   },
   twitter: {
     card: 'summary_large_image',
-    title: '자습ON — 학원 자습실 스마트 관리',
+    title: '자습ON — 집중을 키우는 학습 RPG',
     description:
-      '공부 시간 자동 기록, 실시간 좌석 현황, 오늘의 목표와 랭킹까지.',
+      '집중 모드, 퀘스트, 포인트, 성장 캐릭터, 주간 리포트로 공부 루틴을 만드세요.',
   },
   formatDetection: { telephone: false },
 };
 
 export const viewport: Viewport = {
-  themeColor: '#6C5CE7',
+  themeColor: '#17483a',
   width: 'device-width',
   initialScale: 1,
 };

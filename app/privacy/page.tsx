@@ -11,15 +11,15 @@ const EFFECTIVE = '2026-05-01';
 
 export default function PrivacyPage() {
   return (
-    <section className="bg-white">
+    <section className="bg-[#fffdf7]">
       <div className="mx-auto max-w-3xl px-5 pt-14 pb-24">
-        <p className="text-[13px] font-bold uppercase tracking-[0.2em] text-[#6C5CE7]">
+        <p className="text-[13px] font-black uppercase text-[#17483a]">
           Privacy Policy
         </p>
-        <h1 className="mt-3 text-3xl font-extrabold tracking-[-0.03em] text-[#111217] sm:text-4xl">
+        <h1 className="mt-3 text-3xl font-black text-[#14120f] sm:text-4xl">
           개인정보 처리방침
         </h1>
-        <p className="mt-3 text-[14px] text-[#4E5968]">
+        <p className="mt-3 text-[14px] text-[#5f645f]">
           최종 수정일 {UPDATED} · 시행일 {EFFECTIVE}
         </p>
 
