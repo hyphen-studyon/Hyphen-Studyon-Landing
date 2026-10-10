@@ -27,7 +27,7 @@ npm run start # runs next start on port 12222
 
 ## Deploy
 
-Via `@3xhaust/deploy-cli`, project name `studyon-landing`, domain `studyon-landing.hyphen.it.com` (or a custom domain configured in the deploy platform).
+Via the Hyphen deployment platform, project name `studyon-landing`, domain `studyon-landing.hyphen.it.com` (or a custom domain configured in the deploy platform).
 
 ```bash
 deploy deploy studyon-landing
